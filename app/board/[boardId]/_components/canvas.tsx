@@ -368,9 +368,6 @@ export const Canvas = ({
                 case "Delete":
                     deleteLayer();
                     break;
-                case "Backspace":
-                    deleteLayer();
-                    break
                 case "z":{
                     if(e.ctrlKey||e.metaKey){
                         if(e.shiftKey){
@@ -443,7 +440,6 @@ export const Canvas = ({
                             fill={colorToCss(lastUsedColor)}
                             x={0}
                             y={0}
-
                         />
                     )}
                 </g>
